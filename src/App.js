@@ -1,40 +1,30 @@
-// React
-import { useEffect } from "react";
-
 //Components
 import Header from "./components/Header";
-import Landing from "./components/Landing";
+import Heading from "./components/Heading";
+import Characters from "./components/Characters";
+import Description from "./components/Description";
+import Install from "./components/Install";
+import API from "./components/API";
+import Steps from "./components/Steps";
+import PendingErrors from "./components/PendingErrors";
 
-
-// Hook components
-import FirstRender from "./examples/FirstRender";
-import InitialFocus from "./examples/InitialFocus";
-import WindowWidth from "./examples/WindowWidth";
-import ScrollToBottom from "./examples/ScrollToBottom";
-import ShowHideElement from "./examples/ShowHideElement";
-import StateObject from "./examples/StateObject";
-import ScrollWithKeys from "./examples/ScrollWithKeys";
-import ToggleInput from "./examples/ToggleInput";
+import Footer from "./components/Footer";
 
 function App() {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
   return (
-    <div className="bg-gray-100">
+    <>
       <Header />
-      <div className="p-4 ">
-        <Landing />
-        <ScrollToBottom />
-        <ScrollWithKeys />
-        <ShowHideElement />
-        <WindowWidth />
-        <StateObject />
-        <ToggleInput />
-        <FirstRender />
-        <InitialFocus />
+      <div className="overflow-y-auto max-w-screen-lg mx-auto p-4">
+        <Heading />
+        <Characters />
+        <Description />
+        <Install />
+        <API />
+        <Steps />
+        <PendingErrors />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
