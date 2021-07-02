@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/super-hooks-demo/static/css/main.59065af7.chunk.css",
+    "main.js": "/super-hooks-demo/static/js/main.6d52cc60.chunk.js",
+    "main.js.map": "/super-hooks-demo/static/js/main.6d52cc60.chunk.js.map",
+    "runtime-main.js": "/super-hooks-demo/static/js/runtime-main.260ccfa6.js",
+    "runtime-main.js.map": "/super-hooks-demo/static/js/runtime-main.260ccfa6.js.map",
+    "static/js/2.15522928.chunk.js": "/super-hooks-demo/static/js/2.15522928.chunk.js",
+    "static/js/2.15522928.chunk.js.map": "/super-hooks-demo/static/js/2.15522928.chunk.js.map",
+    "index.html": "/super-hooks-demo/index.html",
+    "static/css/main.59065af7.chunk.css.map": "/super-hooks-demo/static/css/main.59065af7.chunk.css.map",
+    "static/js/2.15522928.chunk.js.LICENSE.txt": "/super-hooks-demo/static/js/2.15522928.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.260ccfa6.js",
+    "static/js/2.15522928.chunk.js",
+    "static/css/main.59065af7.chunk.css",
+    "static/js/main.6d52cc60.chunk.js"
+  ]
+}
