@@ -6,7 +6,7 @@ export default function Header() {
     >
       <a
         style={{ marginTop: -4 }}
-        href="https://www.npmjs.com/package/super-hooks"
+        href="https://www.npmjs.com/package/simple-context-state"
       >
         <i className="fab fa-npm fa-2x"></i>
       </a>
