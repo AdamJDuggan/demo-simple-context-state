@@ -30,7 +30,7 @@ export default function API() {
               useSimpleErrors()
             </td>
             <td className="border border-gray-200 p-1 md:p-6">
-              Access the in-built errors stores.
+              Access the in-built errors store.
             </td>
           </tr>
           <tr>
@@ -38,7 +38,7 @@ export default function API() {
               useSimplePending()
             </td>
             <td className="border border-gray-200 p-1 md:p-6">
-              Access the in-built errors stores.
+              Access the in-built pending store.
             </td>
           </tr>
         </tbody>
