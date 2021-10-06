@@ -25,7 +25,7 @@ const fired = `state = {
 const resolved = `state = { 
   pending: []
   errors: []
-  auth: {loggedIn: true, name: "Ryu", id: 123}
+  auth: {loggedIn: true, id: 123, name: "Ryu"}
   }`;
 const rejected = `state = { 
   pending: []
@@ -53,15 +53,21 @@ export default function PendingErrors() {
         <div style={{ color: "#00d1b2" }} className="mb-6 font-bold">
           Example...
         </div>
-        <div className="mb-2">Store</div>
+        <div className="mb-2">I create an app with one store called 'auth'</div>
         <Code code={store} />
-        <div className="mt-6 mb-2">Initial app state</div>
+        <div className="mt-6 mb-2">This is my initial app state</div>
         <Code code={initial} />
-        <div className="mt-6 mb-2">Login action gets fired</div>
+        <div className="mt-6 mb-2">
+          Login action gets fired by a user. App state becomes...
+        </div>
         <Code code={fired} />
-        <div className="mt-6 mb-2">Login action resoles</div>
+        <div className="mt-6 mb-2">
+          If the Login action resoles the app state will be...
+        </div>
         <Code code={resolved} />
-        <div className="mt-6 mb-2">Login action rejected</div>
+        <div className="mt-6 mb-2">
+          But if the Login action fails then app state becomes...
+        </div>
         <Code code={rejected} />
       </div>
     </TextBlock>
