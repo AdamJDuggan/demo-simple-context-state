@@ -11,11 +11,11 @@ export default function Heading() {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 500);
+    }, 1000);
   };
   return (
     <TextBlock title="Install">
-      <div className="text-xl mb-10">
+      <div className="text-xl mb-6">
         <div className="mb-4">Avalible via NPM</div>
         <CopyToClipboard text={copyText} onCopy={onCopy}>
           <div className="cursor-pointer">
@@ -25,12 +25,14 @@ export default function Heading() {
             >
               {copyText}
             </div>
-            {copied && (
-              <div style={{ color: "#23d160" }}>
-                Copied to clipboard &nbsp;
-                <i className="fas fa-check" />
-              </div>
-            )}
+
+            <div style={{ color: "#23d160", minHeight: 28 }}>
+              {copied && (
+                <>
+                  Copied to clipboard <i className="fas fa-check" />
+                </>
+              )}
+            </div>
           </div>
         </CopyToClipboard>
       </div>

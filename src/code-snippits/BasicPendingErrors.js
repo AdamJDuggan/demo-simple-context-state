@@ -7,10 +7,10 @@ import { useSimplePending } from "simple-context-state";
 // This will return all/any actions which have failed
 const errors = useSimpleErrors(); 
 
-// This will get any/all actions from the auth store which are in pending state
+// This will get any/all actions from the auth store which are pending
 const pending = useSimplePending("auth"); 
 
-// This will see return either or both of these actions if they are in the errors store 
+// This will check whether either (or both) of these actions are in the errors store 
 const errors = useSimpleErrors("auth_login", "products_get"); `;
   return <Code code={codeString} />;
 }

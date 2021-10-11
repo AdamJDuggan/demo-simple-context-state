@@ -39,7 +39,8 @@ export default function Steps() {
         />
         <Step
           number="4"
-          title="Access the built-in errors and pending state. See more details on these stores in the next section"
+          title="Access the built-in errors and pending state. Both hooks recieve arguments as strings. 
+          See more details on these stores in the next section"
           code={<BasicPendingErrors />}
         />
       </div>

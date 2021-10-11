@@ -5,7 +5,7 @@ function BasicState() {
 
 function TodosComponent(){
   
-  const { todos, todos_add, todos_fetch, errors_reset } = useSimpleState();
+  const { todos, todos_add, todos_fetch, clear_errors } = useSimpleState();
 
   return (
 
@@ -19,7 +19,7 @@ function TodosComponent(){
   <button onClick={() => todos_fetch()}>Get todo from API</button>    
 
   // clear_errors is an in-built action which clears the errors store 
-  <button onClick={() => todos_fetch()}>Clear errors</button>    
+  <button onClick={() => clear_errors()}>Clear errors</button>    
   );
 
 }`;

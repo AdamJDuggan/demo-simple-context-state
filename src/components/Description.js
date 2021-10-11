@@ -11,7 +11,7 @@ export default function Description() {
         of state) which interact with the stores you create.
       </div>
       <div className="mb-4">
-        Uses Reacts Context API and does not rely on any third parties
+        Uses React's Context API and does not rely on any third parties
         dependencies.
       </div>
     </TextBlock>

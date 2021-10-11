@@ -55,19 +55,15 @@ export default function PendingErrors() {
         </div>
         <div className="mb-2">I create an app with one store called 'auth'</div>
         <Code code={store} />
-        <div className="mt-6 mb-2">This is my initial app state</div>
+        <div className="mt-6 mb-2">Initial app state is...</div>
         <Code code={initial} />
         <div className="mt-6 mb-2">
-          Login action gets fired by a user. App state becomes...
+          Login action from auth store is fired...
         </div>
         <Code code={fired} />
-        <div className="mt-6 mb-2">
-          If the Login action resoles the app state will be...
-        </div>
+        <div className="mt-6 mb-2">Login action resoles...</div>
         <Code code={resolved} />
-        <div className="mt-6 mb-2">
-          But if the Login action fails then app state becomes...
-        </div>
+        <div className="mt-6 mb-2">Login action fails...</div>
         <Code code={rejected} />
       </div>
     </TextBlock>
