@@ -7,7 +7,7 @@ export default function API() {
       <div className="mb-6">
         Simple-context-state exposes a provider and three hooks:
       </div>
-      <table class="table-auto text-sm md:text-lg">
+      <table class="table-auto text-sm md:text-lg bg-white">
         <tbody>
           <tr>
             <td className="border border-gray-200 p-1 md:p-6 m-2">

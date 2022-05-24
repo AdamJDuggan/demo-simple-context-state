@@ -41,29 +41,28 @@ export default function PendingErrors() {
         store.
       </div>
       <div className="mb-4">
-        The pending store returns an array of strings. The errors store returns
-        an array of objects which each have a type and message key (both
+        The state of the Pending store is an array of strings. The errors store
+        is an array of objects which each have a type and message key (both
         strings).
       </div>
       <div className="mb-10">
         All your asyncActions actions will get wrapped in a pending and errors
-        state.
+        state. See the below example of how this works in action...
       </div>
       <div className="ml-4 mr-4">
-        <div style={{ color: "#00d1b2" }} className="mb-6 font-bold">
-          Example...
+        <div className="mb-2 font-semibold">
+          I create an app with one store called 'auth'
         </div>
-        <div className="mb-2">I create an app with one store called 'auth'</div>
         <Code code={store} />
-        <div className="mt-6 mb-2">Initial app state is...</div>
+        <div className="mt-8 mb-2">Initial app state is...</div>
         <Code code={initial} />
-        <div className="mt-6 mb-2">
+        <div className="mt-8 mb-2">
           Login action from auth store is fired...
         </div>
         <Code code={fired} />
-        <div className="mt-6 mb-2">Login action resoles...</div>
+        <div className="mt-8 mb-2">If Login action resoles...</div>
         <Code code={resolved} />
-        <div className="mt-6 mb-2">Login action fails...</div>
+        <div className="mt-8 mb-2">If Login action fails...</div>
         <Code code={rejected} />
       </div>
     </TextBlock>

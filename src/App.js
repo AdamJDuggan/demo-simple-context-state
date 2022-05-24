@@ -1,5 +1,4 @@
 //Components
-import Header from "./components/Header";
 import Heading from "./components/Heading";
 import Characters from "./components/Characters";
 import Description from "./components/Description";
@@ -12,9 +11,8 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className="overflow-y-auto max-w-screen-lg mx-auto p-4">
+    <div className="bg-gray-50">
+      <div className="overflow-y-auto max-w-screen-lg mx-auto p-4 ">
         <Heading />
         <Characters />
         <Description />
@@ -24,7 +22,7 @@ function App() {
         <PendingErrors />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
