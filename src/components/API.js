@@ -14,7 +14,7 @@ export default function API() {
               {"<SimpleProvider />"}
             </td>
             <td className="border border-gray-200 p-1 md:p-6">
-              Provides state and actions to child components.
+              Provides state and actions to components.
             </td>
           </tr>
           <tr>
@@ -30,7 +30,7 @@ export default function API() {
               useSimpleErrors()
             </td>
             <td className="border border-gray-200 p-1 md:p-6">
-              Access the in-built errors store.
+              Access the inbuilt errors store.
             </td>
           </tr>
           <tr>
@@ -38,7 +38,7 @@ export default function API() {
               useSimplePending()
             </td>
             <td className="border border-gray-200 p-1 md:p-6">
-              Access the in-built pending store.
+              Access the inbuilt pending store.
             </td>
           </tr>
         </tbody>

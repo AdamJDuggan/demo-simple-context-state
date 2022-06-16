@@ -22,7 +22,7 @@ export default function Steps() {
       <div className="mx-4 pt-6">
         <Step
           number="1"
-          title="Create your own stores as basic objects with a name (string), initialState
+          title="Create your own stores as basic objects in a js file with a name (string), initialState
                 (any data type), actions (object of functions) and asyncActions
                 (object of asynchronous functions)."
           code={<BasicStore />}
@@ -39,8 +39,7 @@ export default function Steps() {
         />
         <Step
           number="4"
-          title="Access the built-in errors and pending state. Both hooks recieve strings as arguments. 
-          See more details on these stores in the next section"
+          title="Access the built-in errors and pending state."
           code={<BasicPendingErrors />}
         />
       </div>

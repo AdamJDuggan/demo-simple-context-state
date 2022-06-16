@@ -32,6 +32,13 @@ const rejected = `state = {
   errors: [{type: "auth_login", message: "Wrong Password"}]
   auth: {loggedIn: false, id: null, name: null}
   }`;
+const example = `const errors = useErrors();
+{errors && <ErrorModal message={errors[0].message} />}
+
+// or
+
+const authError = useErrors("auth");
+if(authError) <Redirect to={"/login"} />`;
 
 export default function PendingErrors() {
   return (
@@ -50,20 +57,20 @@ export default function PendingErrors() {
         state. See the below example of how this works in action...
       </div>
       <div className="ml-4 mr-4">
-        <div className="mb-2 font-semibold">
-          I create an app with one store called 'auth'
-        </div>
+        <div className="mb-2">I create an app with one store called 'auth'</div>
         <Code code={store} />
         <div className="mt-8 mb-2">Initial app state is...</div>
         <Code code={initial} />
         <div className="mt-8 mb-2">
-          Login action from auth store is fired...
+          The "login" action from auth store is fired...
         </div>
         <Code code={fired} />
-        <div className="mt-8 mb-2">If Login action resoles...</div>
+        <div className="mt-8 mb-2">If the login action resoles...</div>
         <Code code={resolved} />
-        <div className="mt-8 mb-2">If Login action fails...</div>
+        <div className="mt-8 mb-2">If the login action fails...</div>
         <Code code={rejected} />
+        <div className="mt-8 mb-2">This enables us to do things like...</div>
+        <Code code={example} />
       </div>
     </TextBlock>
   );

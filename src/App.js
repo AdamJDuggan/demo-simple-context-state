@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gray-50">
+    <div>
       <div className="overflow-y-auto max-w-screen-lg mx-auto p-4 ">
         <Heading />
         <Characters />

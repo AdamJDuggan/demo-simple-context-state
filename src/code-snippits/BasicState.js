@@ -18,7 +18,7 @@ function TodosComponent(){
   // Same for asyncActions
   <button onClick={() => todos_fetch()}>Get todo from API</button>    
 
-  // clear_errors is an in-built action which clears the errors store 
+  // clear_errors is an inbuilt action which clears the errors store 
   <button onClick={() => clear_errors()}>Clear errors</button>    
   );
 
